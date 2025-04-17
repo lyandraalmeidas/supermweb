@@ -1,0 +1,202 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #332828;
+    color: #413333;
+}
+
+header {
+    margin: 10px;
+    text-align: center;
+    padding: 20px;
+    background-color: #fce4e4;
+    border-radius: 20px;
+}
+
+header .Logo img {
+    width: 120px;
+    height: 120px;
+    margin: 5px;
+}
+
+nav .buttons {
+    margin: 5px;
+    align-items: center;
+    display: inline-block;
+    padding: 0 20px;
+}
+
+nav .buttons li {
+    align-items: center;
+    display: inline-block;
+    padding: 0 20px;
+    margin: 10px;
+    list-style: none;
+}
+
+nav .buttons a {
+    text-decoration: none;
+    color: #413333;
+    font-weight: bold;
+    background-color: #ccb5b5;
+    border-radius: 20px;
+    padding: 10px 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+nav .buttons a:hover {
+    background-color: #ad9999;
+    color: #332828;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(500px, minmax(500px, 1fr));
+    margin: 10px;
+    background-color: #fce4e4;
+    padding: 20px;
+
+    .contact-form {
+        max-width: 600px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fce4e4;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .contact-form h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #332828;
+    }
+    
+    .contact-form label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: #413333;
+    }
+    
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+        padding: 10px 0px;
+        margin-bottom: 15px;
+        border: 1px solid #ccb5b5;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+    
+    .contact-form button {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background-color: #ccb5b5;
+        color: #332828;
+        font-weight: bold;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out;
+    }
+    
+    .contact-form button:hover {
+        background-color: #ad9999;
+    }
+}
+
+footer {
+    margin: 10px;
+    background-color: #fce4e4;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+    img{
+        margin: 10px;
+    }
+}
+
+footer .Social-Media li {
+    display: inline-block;
+    margin: 10px;
+}
+
+footer .Social-Media a {
+    text-decoration: none;
+    color: #413333;
+    font-weight: bold;
+    background-color: #ccb5b5;
+    border-radius: 20px;
+    padding: 10px 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+footer .Social-Media a:hover {
+    background-color: #ad9999;
+    color: #332828;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 20px;
+    }
+
+    nav .buttons {
+        flex-direction: column;
+        padding: 0 10px;
+        gap: 5px;
+    }
+
+    main .historia {
+        background-color: #ccb5b5;
+        text-align: center;
+        width: 99%;
+        height: auto;
+        border-radius: 20px;
+        border: #332828 5px solid;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+    
+    main .banner-historia .img-banner {
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+        border: #332828 5px solid;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    footer p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 18px;
+    }
+
+    nav .buttons a {
+        font-size: 14px;
+        padding: 5px 15px;
+    }
+
+    main .Profile img {
+        width: 100px;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 320px) {
+    header h1 {
+        font-size: 16px;
+    }
+
+    footer p {
+        font-size: 10px;
+    }
+}
